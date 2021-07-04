@@ -27,7 +27,7 @@ services:
       context: ./front/
       dockerfile: Dockerfile
     volumes:
-      - ./front/app:/usr/src/app
+      - ./front:/app
     command: 'yarn dev'
     ports:
       - "8000:3000"
